@@ -33,7 +33,7 @@ const Navbar = ()=>{
 
         <nav  className="bg-gray-900 text-white flex justify-between px-8">
             <ul className="flex uppercase justify-center items-center gap-5 p-4">
-                {isLoggedIn && (
+                {isLoggedIn ? (
                   <>
                     <li>
                         <Link to="/employee">Employees</Link>
@@ -48,8 +48,11 @@ const Navbar = ()=>{
                         <Link to="/report">Report</Link>
                     </li>
                   </>
-                )}
-            </ul>
+                ) : (
+                  <li className="text-2xl font-bold">
+                    <Link to="/">EPMS</Link>
+                  </li>
+                )}            </ul>
             <div className="flex justify-center items-center gap-5 p-4">
               {!isLoggedIn ? (
                 <>
