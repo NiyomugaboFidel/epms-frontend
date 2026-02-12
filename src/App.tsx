@@ -8,6 +8,7 @@ import Salary from "./components/pages/salary/Salary";
 import Report from "./components/pages/report/report";
 import SignUp from "./components/pages/auth/signup";
 import Login from "./components/pages/auth/login";
+import Home from "./components/pages/Home";
 
 const App = ()=>{
 
@@ -20,8 +21,8 @@ const App = ()=>{
 
 
     <Routes>
-
-      <Route path="/"  element={<Employee />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/employee"  element={<Employee />} />
       <Route path="/department"  element={<Deparment />} />
       <Route path="/salaryform"  element={<Salary />} />
       <Route path="/report"  element={<Report />} />

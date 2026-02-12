@@ -32,20 +32,20 @@ const Navbar = ()=>{
     return(
 
         <nav  className="bg-gray-900 text-white flex justify-between px-8">
-            <ul className="flex justify-center items-center gap-5 p-4">
+            <ul className="flex uppercase justify-center items-center gap-5 p-4">
                 {isLoggedIn && (
                   <>
                     <li>
-                        <Link to="/">Employees</Link>
+                        <Link to="/employee">Employees</Link>
                     </li>
                     <li>
-                         <Link to="department">Department</Link>
+                         <Link to="/department">Department</Link>
                     </li>
                     <li>
-                         <Link to="salaryform">Payroll</Link>
+                         <Link to="/salaryform">Payroll</Link>
                     </li>
                     <li>
-                        <Link to="report">Report</Link>
+                        <Link to="/report">Report</Link>
                     </li>
                   </>
                 )}
